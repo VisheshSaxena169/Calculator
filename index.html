@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator">
+    <header class="calc-header">
+      <h1>Calculator</h1>
+    </header>
+
+    <section class="display-area">
+      <!-- use input for easy copying and keyboard focus -->
+      <input id="display" class="display" type="text" inputmode="numeric" readonly  />
+    </section>
+
+    <section class="buttons">
+      <!-- row 1 -->
+      <button class="btn btnac btn-op"  data-action="clear">AC</button>
+      <button class="btn del btn-op" >Del</button>
+      <button class="btn btn-op " value="00" >00</button>
+      <button class="btn btn-op" value ="/" >/</button>
+
+      <!-- row 2 -->
+      <button class="btn" value="7">7</button>
+      <button class="btn" value="8">8</button>
+      <button class="btn" value="9">9</button>
+      <button class="btn btn-op" value ="*">×</button>
+
+      <!-- row 3 -->
+      <button class="btn" value="4">4</button>
+      <button class="btn" value="5">5</button>
+      <button class="btn" value="6">6</button>
+      <button class="btn btn-op " value ="-">−</button>
+
+      <!-- row 4 -->
+      <button class="btn" value="1">1</button>
+      <button class="btn" value="2">2</button>
+      <button class="btn" value="3">3</button>
+      <button class="btn btn-op" value ="+" data-action="add">+</button>
+
+      <!-- row 5 -->
+      <button class="btn btn-zero" value="0">0</button>
+      <button class="btn" value=".">.</button>
+      <button class="btn btneq btn-op" data-action="equals">=</button>
+    </section>
+  </main>
+
+  <!-- Link your JS file here -->
+  <script src="scripts.js"></script>
+</body>
+</html>
